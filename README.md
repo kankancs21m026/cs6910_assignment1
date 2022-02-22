@@ -45,7 +45,7 @@ Function call:
 		,activation=['tanh','sigmoid','relu' default:'tanh']
 		,weight_decay=[weight decay for L2 regularization ,DataType:Float,default=0]
 		dropout_rate=[DataType:Float,default=0]
-
+		)
 Methods:
 		train(): Train the model
 		GetRunResult(x,y):
