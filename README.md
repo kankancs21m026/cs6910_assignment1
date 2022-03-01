@@ -3,11 +3,11 @@
 
 | Questions      | Links |
 | ----------- | ----------- |
-| Question 1     | [Question 1](https://github.com/ashokkumarthota/Deep-Learning/blob/main/KankanCS21M026/QS1.ipynb)       |
-| Question 2,3,4,5,6    | [Ipython](https://github.com/ashokkumarthota/Deep-Learning/blob/main/KankanCS21M026/QS2,3,4,5,6_Optimizers.ipynb)       , [Sweep1](https://github.com/ashokkumarthota/Deep-Learning/blob/main/KankanCS21M026/QS4%2C5%2C6_sweepRun1.py)     ,  [Sweep2](https://github.com/ashokkumarthota/Deep-Learning/blob/main/KankanCS21M026/QS4%2C5%2C6_sweepRun2.py) [Sweep3](https://github.com/ashokkumarthota/Deep-Learning/blob/main/KankanCS21M026/QS4%2C5%2C6_sweepRun3.py)            |
-| Question 7    | [Question 7](https://github.com/ashokkumarthota/Deep-Learning/blob/main/KankanCS21M026/QS7-confusionMatrix.ipynb)       |
-|Question 8| [ipython](https://github.com/ashokkumarthota/Deep-Learning/blob/main/KankanCS21M026/Q8_CrossVsMse.ipynb)  ,[sweep](https://github.com/ashokkumarthota/Deep-Learning/blob/main/KankanCS21M026/QS8_SweepRun.py)|
-|Question 10| [ipython](https://github.com/ashokkumarthota/Deep-Learning/blob/main/KankanCS21M026/QS10_AccurecyMnist.ipynb)|
+| Question 1     | [Question 1](https://github.com/kankancs21m026/cs6910_assignment1/blob/main/QS1.ipynb)       |
+| Question 2,3,4,5,6    | [Ipython](https://github.com/kankancs21m026/cs6910_assignment1/blob/main/QS2,3,4,5,6_Optimizers.ipynb)       , [Sweep1](https://github.com/kankancs21m026/cs6910_assignment1/blob/main/QS4%2C5%2C6_sweepRun1.py)     ,  [Sweep2](https://github.com/kankancs21m026/cs6910_assignment1/blob/main/QS4%2C5%2C6_sweepRun2.py) [Sweep3](https://github.com/kankancs21m026/cs6910_assignment1/blob/main/QS4%2C5%2C6_sweepRun3.py)            |
+| Question 7    | [Question 7](https://github.com/kankancs21m026/cs6910_assignment1/blob/main/QS7-confusionMatrix.ipynb)       |
+|Question 8| [ipython](https://github.com/kankancs21m026/cs6910_assignment1/blob/main/Q8_CrossVsMse.ipynb)  ,[sweep](https://github.com/kankancs21m026/cs6910_assignment1/blob/main/QS8_SweepRun.py)|
+|Question 10| [ipython](https://github.com/kankancs21m026/cs6910_assignment1/blob/main/QS10_AccurecyMnist.ipynb)|
 
 
 
@@ -33,11 +33,11 @@ This classs used to define  various weight initializers .Mostly called from Neur
  This classs used to define  various Activation functions and there derivatives.Mostly called from NeuralNetwork.
 		
 **All optimizers:**	
-- [fashnMnist/optimizer/Adam.py](https://github.com/ashokkumarthota/Deep-Learning/blob/main/KankanCS21M026/fashnMnist/optimizer/Adam.py)
-- [fashnMnist/optimizer/NAG.py](https://github.com/ashokkumarthota/Deep-Learning/blob/main/KankanCS21M026/fashnMnist/optimizer/NAG.pyy)
-- [fashnMnist/optimizer/NAdam.py](https://github.com/ashokkumarthota/Deep-Learning/blob/main/KankanCS21M026/fashnMnist/optimizer/NAdam.py)
-- [fashnMnist/optimizer/RMSProp.py](https://github.com/ashokkumarthota/Deep-Learning/blob/main/KankanCS21M026/fashnMnist/optimizer/RMSProp.py)
-- [fashnMnist/optimizer/MomentumGradiantDecent.py](https://github.com/ashokkumarthota/Deep-Learning/blob/main/KankanCS21M026/fashnMnist/optimizer/MomentumGradiantDecent.py)
+- [fashnMnist/optimizer/Adam.py](https://github.com/kankancs21m026/cs6910_assignment1/blob/main/fashnMnist/optimizer/Adam.py)
+- [fashnMnist/optimizer/NAG.py](https://github.com/kankancs21m026/cs6910_assignment1/blob/main/fashnMnist/optimizer/NAG.pyy)
+- [fashnMnist/optimizer/NAdam.py](https://github.com/kankancs21m026/cs6910_assignment1/blob/main/fashnMnist/optimizer/NAdam.py)
+- [fashnMnist/optimizer/RMSProp.py](https://github.com/kankancs21m026/cs6910_assignment1/blob/main/fashnMnist/optimizer/RMSProp.py)
+- [fashnMnist/optimizer/MomentumGradiantDecent.py](https://github.com/kankancs21m026/cs6910_assignment1/blob/main/fashnMnist/optimizer/MomentumGradiantDecent.py)
 		
 Please note Basic gradiant decent and stochastic gradient descent thechnique implemented in **/fashnMnist/NeuralNetwork.py**
 
@@ -74,7 +74,7 @@ FashnMnist(
 ***instead of using "HiddenLayerNuron" parameter user can use layer2_size,layer2_size,layer3_size,layer4_size,layer5_size to specify size of each hidden layers
 ```
 Example 
- [checkout this notebook](https://github.com/ashokkumarthota/Deep-Learning/blob/main/KankanCS21M026/QS2,3,4,5,6_Optimizers.ipynb)
+ [checkout this notebook](https://github.com/kankancs21m026/cs6910_assignment1/blob/main/QS2,3,4,5,6_Optimizers.ipynb)
 ```
 
 #setup
