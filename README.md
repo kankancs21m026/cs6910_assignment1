@@ -20,16 +20,16 @@
  
 # Packages
 
- - [fashnMnist/NeuralNetwork.py](https://github.com/ashokkumarthota/Deep-Learning/blob/main/KankanCS21M026/fashnMnist/NeuralNetwork.py)
+ - [fashnMnist/NeuralNetwork.py](https://github.com/kankancs21m026/cs6910_assignment1/blob/main/fashnMnist/NeuralNetwork.py)
   Implementation of neural network.It has all important common functions for forward propagation, back propagation
 which are used by all other optimizers
- - [fashnMnist/FashnMnist.py](https://github.com/ashokkumarthota/Deep-Learning/blob/main/KankanCS21M026/fashnMnist/FashnMnist.py)
+ - [fashnMnist/FashnMnist.py](https://github.com/kankancs21m026/cs6910_assignment1/blob/main/fashnMnist/FashnMnist.py)
  This class call NeuralNetwork or other optimizers based on input provided by used 
-- [fashnMnist/Initializers.py](https://github.com/ashokkumarthota/Deep-Learning/blob/main/KankanCS21M026/fashnMnist/Initializers.py)		
+- [fashnMnist/Initializers.py](https://github.com/kankancs21m026/cs6910_assignment1/blob/main/fashnMnist/Initializers.py)		
 This classs used to define  various weight initializers .Mostly called from NeuralNetwork
-- [fashnMnist/Preprocessor.py](https://github.com/ashokkumarthota/Deep-Learning/blob/main/KankanCS21M026/fashnMnist/Preprocessor.py)		
+- [fashnMnist/Preprocessor.py](https://github.com/kankancs21m026/cs6910_assignment1/blob/main/fashnMnist/Preprocessor.py)		
  This classs used to preprocess input data like apply one hot encoding,normalization etc
-- [fashnMnist/Activations.py](https://github.com/ashokkumarthota/Deep-Learning/blob/main/KankanCS21M026/fashnMnist/Activations.py)		
+- [fashnMnist/Activations.py](https://github.com/kankancs21m026/cs6910_assignment1/blob/main/fashnMnist/Activations.py)		
  This classs used to define  various Activation functions and there derivatives.Mostly called from NeuralNetwork.
 		
 **All optimizers:**	
