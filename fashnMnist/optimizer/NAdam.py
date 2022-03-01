@@ -65,7 +65,7 @@ class NAdam(NeuralNetwork):
         
     def updateParam(self, m_w,v_w,m_b, v_b ,beta1,beta2,epoch): 
         totalLayer=len(self.HiddenLayerNuron)
-        
+     
         beta1Hat=1.0-(beta1**epoch)
         beta2Hat=1.0-(beta2**epoch)
         
@@ -78,42 +78,21 @@ class NAdam(NeuralNetwork):
         newmw=[]
         newmb=[]
         for i in range(totalLayer):
-            vw1= np.multiply(v_w[i],beta2)
-            vw2=np.square(self.DW[i])
-            vw2= np.multiply(vw2 ,beta2Dash)
-            vw3=np.add(vw1,vw2)
+            vw= np.multiply(v_w[i],beta2)+ np.multiply(np.square(self.DW[i]) ,beta2Dash)      
+            vb=np.multiply(v_b[i],beta2)+np.multiply(np.square(self.DB[i]) ,beta2Dash)
+            mw= np.multiply(m_w[i],beta1)+np.multiply(self.DW[i] ,beta1Dash)   
+            mb= np.multiply(m_b[i],beta1)+ np.multiply(self.DB[i] ,beta1Dash)
            
-            vb1=np.multiply(v_b[i],beta2)
-            vb2=np.square(self.DB[i])
-            vb2=np.multiply(vb2 ,beta2Dash)
-            
-            vb3=np.add(vb1,vb2)
-           
-
-            mw1= np.multiply(m_w[i],beta1)
-            mw2= np.multiply(self.DW[i] ,beta1Dash)
-            mw=np.add(mw1,mw2)
-            mb1= np.multiply(m_b[i],beta1)
-            mb2= np.multiply(self.DB[i] ,beta1Dash)
-            mb=np.add(mb1,mb2)
 
              #bias correction
-            vw= vw3/beta2Hat
-            vb= vb3/beta2Hat 
+            vw= vw/beta2Hat
+            vb= vb/beta2Hat 
             mw= mw/beta1Hat
             mb= mb/beta1Hat
             
-            nagw1= (beta1*mw)
-            nagw2= beta1Dash *(self.DW[i])
-            nagw2=nagw2/beta1Hat
-            nagw= nagw1+nagw2
-            
-            nagb1= (beta1*mb)
-            nagb2= beta1Dash *(self.DB[i])
-            nagb2=nagb2/beta1Hat
-            nagb= nagb1+nagb2
-            
-            
+            nagw= (beta1*mw)+ beta1Dash *(self.DW[i])/beta1Hat        
+            nagb= (beta1*mb)+ beta1Dash *(self.DB[i])/beta1Hat
+          
             
             newvw.append(vw)
             newvb.append(vb)

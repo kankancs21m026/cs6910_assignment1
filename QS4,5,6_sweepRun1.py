@@ -110,7 +110,7 @@ def train_model(config = sweep_config):
 
 import os
 os.environ['WANDB_NOTEBOOK_NAME'] = 'sweepTest'
-sweep_id = wandb.sweep(sweep_config, project = "cs6910_assignment1")
+sweep_id = wandb.sweep(sweep_config, project = "DL 1.1")
 wandb.agent(sweep_id, function = train_model)
 
 

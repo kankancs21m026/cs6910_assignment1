@@ -79,28 +79,15 @@ class Adam(NeuralNetwork):
         newmw=[]
         newmb=[]
         for i in range(totalLayer):
-            vw1= np.multiply(v_w[i],beta2)
-            vw2=np.square(self.DW[i])
-            vw2= np.multiply(vw2 ,beta2Dash)
-            vw3=np.add(vw1,vw2)
-           
-            vb1=np.multiply(v_b[i],beta2)
-            vb2=np.square(self.DB[i])
-            vb2=np.multiply(vb2 ,beta2Dash)
-            
-            vb3=np.add(vb1,vb2)
-           
+            vw= np.multiply(v_w[i],beta2)+np.square(self.DW[i])*beta2Dash         
+            vb=np.multiply(v_b[i],beta2)+np.square(self.DB[i])*beta2Dash
+            mw= np.multiply(m_w[i],beta1)+np.multiply(self.DW[i] ,beta1Dash)
+            mb= np.multiply(m_b[i],beta1)+np.multiply(self.DB[i] ,beta1Dash)
+          
 
-            mw1= np.multiply(m_w[i],beta1)
-            mw2= np.multiply(self.DW[i] ,beta1Dash)
-            mw=np.add(mw1,mw2)
-            mb1= np.multiply(m_b[i],beta1)
-            mb2= np.multiply(self.DB[i] ,beta1Dash)
-            mb=np.add(mb1,mb2)
-
-             #bias correction
-            vw= vw3/beta2Hat
-            vb= vb3/beta2Hat 
+            #bias correction
+            vw= vw/beta2Hat
+            vb= vb/beta2Hat 
             mw= mw/beta1Hat
             mb= mb/beta1Hat
             
