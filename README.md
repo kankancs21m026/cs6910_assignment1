@@ -1,5 +1,5 @@
-#CS6910 Assignment 1 (CS21M026)
-# Questions
+# CS6910 Assignment 1 (CS21M026)
+## Questions
 
 | Questions      | Links |
 | ----------- | ----------- |
@@ -18,7 +18,7 @@
  
 
  
-# Packages
+## Packages
 
  - [fashnMnist/NeuralNetwork.py](https://github.com/kankancs21m026/cs6910_assignment1/blob/main/fashnMnist/NeuralNetwork.py)
   Implementation of neural network.It has all important common functions for forward propagation, back propagation
